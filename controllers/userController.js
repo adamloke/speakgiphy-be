@@ -2,7 +2,7 @@ const User = require("../models/User")
 const jwt = require("jsonwebtoken")
 
 // how long a token lasts before expiring
-const tokenLasts = "365d"
+const tokenLasts = "90d"
 
 exports.checkToken = function (req, res) {
   try {
